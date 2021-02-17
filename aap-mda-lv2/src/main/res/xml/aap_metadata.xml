@@ -1,549 +1,641 @@
-<plugins>  <plugin backend="LV2" name="MDA Ambience" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Ambience" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+<plugins xmlns="urn:org.androidaudioplugin.core" xmlns:pp="urn:org.androidaudioplugin.port">
+  <plugin backend="LV2" name="MDA Ambience" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Ambience" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Size" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="HF Damp" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="Mix" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Size" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="HF Damp" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mix" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Bandisto" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Bandisto" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Listen" />
-      <port direction="input" default="0.400000" minimum="0.000000" maximum="1.000000" content="other" name="L __ M" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="M __ H" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="L Dist" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="M Dist" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="H Dist" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="L Out" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="M Out" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="H Out" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Listen">
+        <pp:enumeration label="Low" value="0.0" />
+        <pp:enumeration label="Mid" value="0.33333333" />
+        <pp:enumeration label="High" value="0.66666666" />
+        <pp:enumeration label="Out" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.400000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L __ M" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M __ H" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L Dist" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M Dist" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="H Dist" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="H Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="Bipolar" value="0.0" />
+        <pp:enumeration label="Unipolar" value="1.0" />
+      </port>
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA BeatBox" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/BeatBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.300000" minimum="0.000000" maximum="1.000000" content="other" name="Hat Thr" />
-      <port direction="input" default="0.450000" minimum="0.000000" maximum="1.000000" content="other" name="Hat Rate" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Hat Mix" />
-      <port direction="input" default="0.460000" minimum="0.000000" maximum="1.000000" content="other" name="Kik Thr" />
-      <port direction="input" default="0.150000" minimum="0.000000" maximum="1.000000" content="other" name="Kik Trig" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Kik Mix" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Snr Thr" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Snr Trig" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Snr Mix" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Dynamics" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Record" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Thru Mix" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.300000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hat Thr" />
+      <port direction="input" pp:default="0.450000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hat Rate" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hat Mix" />
+      <port direction="input" pp:default="0.460000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Kik Thr" />
+      <port direction="input" pp:default="0.150000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Kik Trig" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Kik Mix" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Snr Thr" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Snr Trig" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Snr Mix" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dynamics" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Record">
+        <pp:enumeration label="None" value="0.0" />
+        <pp:enumeration label="Monitor Input" value="0.25" />
+        <pp:enumeration label="Record Hat" value="0.5" />
+        <pp:enumeration label="Record Kick" value="0.75" />
+        <pp:enumeration label="Record Snare" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thru Mix" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Combo" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Combo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Model" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Drive" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Bias" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Stereo" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="HPF Freq" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="HPF Reso" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Model">
+        <pp:enumeration label="D.I. (flat frequency response)" value="0.0" />
+        <pp:enumeration label="Tradtional speaker simulator" value="0.16666666" />
+        <pp:enumeration label="Small radio speaker" value="0.33333333" />
+        <pp:enumeration label="Small combo (close mic)" value="0.5" />
+        <pp:enumeration label="Small combo (far mic)" value="0.66666666" />
+        <pp:enumeration label="Large stack (front mic)" value="0.833333333" />
+        <pp:enumeration label="Large stack (side mic, scooped mids)" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Drive" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Bias" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0"   pp:type="toggled" content="other" name="Stereo" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="HPF Freq" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="HPF Reso" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA DX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Attack" />
-      <port direction="input" default="0.650000" minimum="0.000000" maximum="1.000000" content="other" name="Decay" />
-      <port direction="input" default="0.441000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input" default="0.842000" minimum="0.000000" maximum="1.000000" content="other" name="Coarse" />
-      <port direction="input" default="0.329000" minimum="0.000000" maximum="1.000000" content="other" name="Fine" />
-      <port direction="input" default="0.230000" minimum="0.000000" maximum="1.000000" content="other" name="Mod Init" />
-      <port direction="input" default="0.800000" minimum="0.000000" maximum="1.000000" content="other" name="Mod Dec" />
-      <port direction="input" default="0.050000" minimum="0.000000" maximum="1.000000" content="other" name="Mod Sus" />
-      <port direction="input" default="0.800000" minimum="0.000000" maximum="1.000000" content="other" name="Mod Rel" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="Mod Vel" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Vibrato" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Octave" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="FineTune" />
-      <port direction="input" default="0.447000" minimum="0.000000" maximum="1.000000" content="other" name="Waveform" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mod Thru" />
-      <port direction="input" default="0.414000" minimum="0.000000" maximum="1.000000" content="other" name="LFO Rate" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
-      <port direction="input"    content="midi" name="Event In" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Attack" />
+      <port direction="input" pp:default="0.650000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Decay" />
+      <port direction="input" pp:default="0.441000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input" pp:default="0.842000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Coarse" />
+      <port direction="input" pp:default="0.329000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fine" />
+      <port direction="input" pp:default="0.230000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod Init" />
+      <port direction="input" pp:default="0.800000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod Dec" />
+      <port direction="input" pp:default="0.050000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod Sus" />
+      <port direction="input" pp:default="0.800000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod Rel" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod Vel" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Vibrato" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Octave" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="FineTune" />
+      <port direction="input" pp:default="0.447000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Waveform" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod Thru" />
+      <port direction="input" pp:default="0.414000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Rate" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
+      <port direction="input"     content="midi" name="Event In" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA De-ess" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DeEss" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Thresh" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Freq" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="HF Drive" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thresh" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="HF Drive" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Degrade" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Degrade" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.800000" minimum="0.000000" maximum="1.000000" content="other" name="Headroom" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Quant" />
-      <port direction="input" default="0.650000" minimum="0.000000" maximum="1.000000" content="other" name="Rate" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="Post Filter" />
-      <port direction="input" default="0.580000" minimum="0.000000" maximum="1.000000" content="other" name="Non-Lin" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.800000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Headroom" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Quant" />
+      <port direction="input" pp:default="0.650000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Rate" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Post Filter" />
+      <port direction="input" pp:default="0.580000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Non-Lin" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Delay" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Delay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="L Delay" />
-      <port direction="input" default="0.270000" minimum="0.000000" maximum="1.000000" content="other" name="R Delay" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Feedback" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Fb Tone" />
-      <port direction="input" default="0.330000" minimum="0.000000" maximum="1.000000" content="other" name="FX Mix" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L Delay" />
+      <port direction="input" pp:default="0.270000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="R Delay" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Feedback" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fb Tone" />
+      <port direction="input" pp:default="0.330000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="FX Mix" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Detune" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Detune" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.200000" minimum="0.000000" maximum="1.000000" content="other" name="Detune" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="Mix" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Latency" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.200000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Detune" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mix" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Latency" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Dither" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Dither" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Word Len" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Dither" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Dith Amp" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="DC Trim" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Zoom" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Word Len" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dither">
+        <pp:enumeration label="Triangular PDF dither" value="0.33333333" />
+        <pp:enumeration label="High-pass Triangular PDF dither" value="0.66666666" />
+        <pp:enumeration label="Second-order noise-shaped dither" value="1.0" />
+        <pp:enumeration label="Truncation" value="0.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dith Amp" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="DC Trim" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Zoom" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA DubDelay" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DubDelay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Delay" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Feedback" />
-      <port direction="input" default="0.400000" minimum="0.000000" maximum="1.000000" content="other" name="Fb Tone" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="LFO Depth" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="LFO Rate" />
-      <port direction="input" default="0.330000" minimum="0.000000" maximum="1.000000" content="other" name="FX Mix" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Delay" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Feedback" />
+      <port direction="input" pp:default="0.400000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fb Tone" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Depth" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Rate" />
+      <port direction="input" pp:default="0.330000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="FX Mix" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Dynamics" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Dynamics" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Thresh" />
-      <port direction="input" default="0.400000" minimum="0.000000" maximum="1.000000" content="other" name="Ratio" />
-      <port direction="input" default="0.100000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.180000" minimum="0.000000" maximum="1.000000" content="other" name="Attack" />
-      <port direction="input" default="0.550000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Limiter" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Gate Thr" />
-      <port direction="input" default="0.100000" minimum="0.000000" maximum="1.000000" content="other" name="Gate Att" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Gate Rel" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mix" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thresh" />
+      <port direction="input" pp:default="0.400000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Ratio" />
+      <port direction="input" pp:default="0.100000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.180000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Attack" />
+      <port direction="input" pp:default="0.550000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Limiter" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Gate Thr" />
+      <port direction="input" pp:default="0.100000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Gate Att" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Gate Rel" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mix" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA ePiano" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/EPiano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Envelope Decay" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Envelope Release" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Hardness" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Treble Boost" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Modulation" />
-      <port direction="input" default="0.650000" minimum="0.000000" maximum="1.000000" content="other" name="LFO Rate" />
-      <port direction="input" default="0.250000" minimum="0.000000" maximum="1.000000" content="other" name="Velocity Sense" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Stereo Width" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Polyphonic" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Fine Tuning" />
-      <port direction="input" default="0.146000" minimum="0.000000" maximum="1.000000" content="other" name="Random Tuning" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Overdrive" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
-      <port direction="input"    content="midi" name="Event In" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Envelope Decay" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Envelope Release" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hardness" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Treble Boost" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Modulation" />
+      <port direction="input" pp:default="0.650000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Rate" />
+      <port direction="input" pp:default="0.250000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Velocity Sense" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Stereo Width" />
+      <port direction="input" pp:default="0"   pp:type="toggled" content="other" name="Polyphonic" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fine Tuning" />
+      <port direction="input" pp:default="0.146000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Random Tuning" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Overdrive" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
+      <port direction="input"     content="midi" name="Event In" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Image" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Image" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input" default="0.750000" minimum="0.000000" maximum="1.000000" content="other" name="S Width" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="S Pan" />
-      <port direction="input" default="0.750000" minimum="0.000000" maximum="1.000000" content="other" name="M Level" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="M Pan" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="Stereo image adjustment" value="0.0" />
+        <pp:enumeration label="Encode to MS" value="0.25" />
+        <pp:enumeration label="Decode from MS" value="0.5" />
+        <pp:enumeration label="Decode from MS (input channels reversed)" value="0.75" />
+      </port>
+      <port direction="input" pp:default="0.750000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="S Width" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="S Pan" />
+      <port direction="input" pp:default="0.750000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M Level" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M Pan" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA JX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/JX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="OSC Mix" />
-      <port direction="input" default="0.370000" minimum="0.000000" maximum="1.000000" content="other" name="OSC Tune" />
-      <port direction="input" default="0.250000" minimum="0.000000" maximum="1.000000" content="other" name="OSC Fine" />
-      <port direction="input" default="0.300000" minimum="0.000000" maximum="1.000000" content="other" name="Glide" />
-      <port direction="input" default="0.320000" minimum="0.000000" maximum="1.000000" content="other" name="Gld Rate" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Gld Bend" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Freq" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Reso" />
-      <port direction="input" default="0.120000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Env" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="VCF LFO" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Vel" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Att" />
-      <port direction="input" default="0.890000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Dec" />
-      <port direction="input" default="0.900000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Sus" />
-      <port direction="input" default="0.730000" minimum="0.000000" maximum="1.000000" content="other" name="VCF Rel" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="ENV Att" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="ENV Dec" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="ENV Sus" />
-      <port direction="input" default="0.710000" minimum="0.000000" maximum="1.000000" content="other" name="ENV Rel" />
-      <port direction="input" default="0.810000" minimum="0.000000" maximum="1.000000" content="other" name="LFO Rate" />
-      <port direction="input" default="0.650000" minimum="0.000000" maximum="1.000000" content="other" name="Vibrato" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Noise" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Octave" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Tuning" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
-      <port direction="input"    content="midi" name="Event In" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="OSC Mix" />
+      <port direction="input" pp:default="0.370000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="OSC Tune" />
+      <port direction="input" pp:default="0.250000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="OSC Fine" />
+      <port direction="input" pp:default="0.300000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Glide" />
+      <port direction="input" pp:default="0.320000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Gld Rate" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Gld Bend" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Freq" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Reso" />
+      <port direction="input" pp:default="0.120000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Env" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF LFO" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Vel" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Att" />
+      <port direction="input" pp:default="0.890000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Dec" />
+      <port direction="input" pp:default="0.900000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Sus" />
+      <port direction="input" pp:default="0.730000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="VCF Rel" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="ENV Att" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="ENV Dec" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="ENV Sus" />
+      <port direction="input" pp:default="0.710000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="ENV Rel" />
+      <port direction="input" pp:default="0.810000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Rate" />
+      <port direction="input" pp:default="0.650000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Vibrato" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Noise" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Octave" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Tuning" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
+      <port direction="input"     content="midi" name="Event In" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Leslie" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Leslie" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Lo Width" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Lo Throb" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Hi Width" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Hi Depth" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Hi Throb" />
-      <port direction="input" default="0.480000" minimum="0.000000" maximum="1.000000" content="other" name="X-Over" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Speed" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="Stop" value="0.0" />
+        <pp:enumeration label="Slow" value="0.5" />
+        <pp:enumeration label="Fast" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Lo Width" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Lo Throb" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hi Width" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hi Depth" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hi Throb" />
+      <port direction="input" pp:default="0.480000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="X-Over" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Speed" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Limiter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Limiter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Thresh" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input" default="0.150000" minimum="0.000000" maximum="1.000000" content="other" name="Attack" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Knee" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thresh" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input" pp:default="0.150000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Attack" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Knee">
+        <pp:enumeration label="Hard" value="0.0" />
+        <pp:enumeration label="Soft" value="1.0" />
+      </port>
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Loudness" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Loudness" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Loudness" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.350000" minimum="0.000000" maximum="1.000000" content="other" name="Link" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Loudness" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.350000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Link" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA MultiBand" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/MultiBand" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Listen" />
-      <port direction="input" default="0.103000" minimum="0.000000" maximum="1.000000" content="other" name="L __ M" />
-      <port direction="input" default="0.878000" minimum="0.000000" maximum="1.000000" content="other" name="M __ H" />
-      <port direction="input" default="0.540000" minimum="0.000000" maximum="1.000000" content="other" name="L Comp" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="M Comp" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="H Comp" />
-      <port direction="input" default="0.450000" minimum="0.000000" maximum="1.000000" content="other" name="L Out" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="M Out" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="H Out" />
-      <port direction="input" default="0.220000" minimum="0.000000" maximum="1.000000" content="other" name="Attack" />
-      <port direction="input" default="0.602000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input" default="0.550000" minimum="0.000000" maximum="1.000000" content="other" name="Stereo" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Process" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Listen">
+        <pp:enumeration label="Low" value="0.0" />
+        <pp:enumeration label="Mid" value="0.33333333" />
+        <pp:enumeration label="High" value="0.66666666" />
+        <pp:enumeration label="Output" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.103000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L __ M" />
+      <port direction="input" pp:default="0.878000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M __ H" />
+      <port direction="input" pp:default="0.540000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L Comp" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M Comp" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="H Comp" />
+      <port direction="input" pp:default="0.450000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="L Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="M Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="H Out" />
+      <port direction="input" pp:default="0.220000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Attack" />
+      <port direction="input" pp:default="0.602000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input" pp:default="0.550000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Stereo" />
+      <port direction="input" pp:default="0"   pp:type="toggled" content="other" name="Process" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Overdrive" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Overdrive" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Drive" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Muffle" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Drive" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Muffle" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Piano" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Piano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Envelope Decay" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Envelope Release" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Hardness Offset" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Velocity to Hardness" />
-      <port direction="input" default="0.803000" minimum="0.000000" maximum="1.000000" content="other" name="Muffling Filter" />
-      <port direction="input" default="0.251000" minimum="0.000000" maximum="1.000000" content="other" name="Velocity to Muffling" />
-      <port direction="input" default="0.376000" minimum="0.000000" maximum="1.000000" content="other" name="Velocity Sensitivity" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Stereo Width" />
-      <port direction="input" default="0.330000" minimum="0.000000" maximum="1.000000" content="other" name="Polyphony" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Fine Tuning" />
-      <port direction="input" default="0.246000" minimum="0.000000" maximum="1.000000" content="other" name="Random Detuning" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Stretch Tuning" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
-      <port direction="input"    content="midi" name="Event In" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Envelope Decay" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Envelope Release" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hardness Offset" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Velocity to Hardness" />
+      <port direction="input" pp:default="0.803000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Muffling Filter" />
+      <port direction="input" pp:default="0.251000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Velocity to Muffling" />
+      <port direction="input" pp:default="0.376000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Velocity Sensitivity" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Stereo Width" />
+      <port direction="input" pp:default="0.330000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Polyphony" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fine Tuning" />
+      <port direction="input" pp:default="0.246000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Random Detuning" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Stretch Tuning" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
+      <port direction="input"     content="midi" name="Event In" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA RePsycho!" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RePsycho" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Tune" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Fine" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Decay" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Thresh" />
-      <port direction="input" default="0.450000" minimum="0.000000" maximum="1.000000" content="other" name="Hold" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mix" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Quality" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Tune" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fine" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Decay" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thresh" />
+      <port direction="input" pp:default="0.450000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hold" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mix" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Quality">
+        <pp:enumeration label="Low" value="0.0" />
+        <pp:enumeration label="High" value="1.0" />
+      </port>
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA RezFilter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RezFilter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.330000" minimum="0.000000" maximum="1.000000" content="other" name="Freq" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Res" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.850000" minimum="0.000000" maximum="1.000000" content="other" name="Env-_VCF" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Attack" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="LFO-_VCF" />
-      <port direction="input" default="0.400000" minimum="0.000000" maximum="1.000000" content="other" name="LFO Rate" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Trigger" />
-      <port direction="input" default="0.750000" minimum="0.000000" maximum="1.000000" content="other" name="Max Freq" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.330000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Res" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.850000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Env-_VCF" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Attack" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO-_VCF" />
+      <port direction="input" pp:default="0.400000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Rate" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Trigger" />
+      <port direction="input" pp:default="0.750000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Max Freq" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA RingMod" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RingMod" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.062500" minimum="0.000000" maximum="1.000000" content="other" name="Freq" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Fine" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Feedback" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.062500" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fine" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Feedback" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA RoundPan" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RoundPan" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Pan" />
-      <port direction="input" default="0.800000" minimum="0.000000" maximum="1.000000" content="other" name="Auto" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Pan" />
+      <port direction="input" pp:default="0.800000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Auto" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Shepard" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Shepard" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input" default="0.700000" minimum="0.000000" maximum="1.000000" content="other" name="Rate" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="Tones only" value="0.0" />
+        <pp:enumeration label="Input ring modulated by tones" value="0.5" />
+        <pp:enumeration label="Tones mixed with input" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.700000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Rate" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Splitter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Splitter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Freq" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Freq SW" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Level" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Level SW" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Envelope" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="Normal" value="0.0" />
+        <pp:enumeration label="Inverse" value="0.33333333" />
+        <pp:enumeration label="Normal Inverse" value="0.66666666" />
+        <pp:enumeration label="Inverse Normal" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq SW">
+        <pp:enumeration label="High" value="1.0" />
+        <pp:enumeration label="Low" value="0.0" />
+        <pp:enumeration label="All" value="0.5" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Level" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Level SW">
+        <pp:enumeration label="Low" value="0.0" />
+        <pp:enumeration label="All" value="0.5" />
+        <pp:enumeration label="High" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Envelope" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Stereo" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Stereo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.780000" minimum="0.000000" maximum="1.000000" content="other" name="Width" />
-      <port direction="input" default="0.430000" minimum="0.000000" maximum="1.000000" content="other" name="Delay" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Balance" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mod" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Rate" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.780000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Width" />
+      <port direction="input" pp:default="0.430000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Delay" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Balance" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Rate" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA SubSynth" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/SubSynth" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Type" />
-      <port direction="input" default="0.300000" minimum="0.000000" maximum="1.000000" content="other" name="Level" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Tune" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Dry Mix" />
-      <port direction="input" default="0.600000" minimum="0.000000" maximum="1.000000" content="other" name="Thresh" />
-      <port direction="input" default="0.650000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Type">
+        <pp:enumeration label="Distort" value="0.0" />
+        <pp:enumeration label="Divide" value="0.25" />
+        <pp:enumeration label="Invert" value="0.5" />
+        <pp:enumeration label="Key Osc." value="0.75" />
+      </port>
+      <port direction="input" pp:default="0.300000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Level" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Tune" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dry Mix" />
+      <port direction="input" pp:default="0.600000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thresh" />
+      <port direction="input" pp:default="0.650000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA TalkBox" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/TalkBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Wet" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Dry" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Carrier" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Quality" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Wet" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dry" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Carrier" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Quality" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA TestTone" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/TestTone" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input" default="0.710000" minimum="0.000000" maximum="1.000000" content="other" name="Level" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Channel" />
-      <port direction="input" default="0.570000" minimum="0.000000" maximum="1.000000" content="other" name="F1" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="F2" />
-      <port direction="input" default="0.300000" minimum="0.000000" maximum="1.000000" content="other" name="Sweep" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Thru" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Zero dB" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="MIDI #" value="0.0" />
+        <pp:enumeration label="Impulse" value="0.14" />
+        <pp:enumeration label="White" value="0.28" />
+        <pp:enumeration label="Pink" value="0.42" />
+        <pp:enumeration label="Sine" value="0.57" />
+        <pp:enumeration label="Log Sweep" value="0.71" />
+        <pp:enumeration label="Log Step" value="0.85" />
+        <pp:enumeration label="Lin Sweep" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.710000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Level" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Channel" />
+      <port direction="input" pp:default="0.570000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="F1" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="F2" />
+      <port direction="input" pp:default="0.300000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Sweep" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Thru" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Zero dB" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA ThruZero" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/ThruZero" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.300000" minimum="0.000000" maximum="1.000000" content="other" name="Rate" />
-      <port direction="input" default="0.430000" minimum="0.000000" maximum="1.000000" content="other" name="Depth" />
-      <port direction="input" default="0.470000" minimum="0.000000" maximum="1.000000" content="other" name="Mix" />
-      <port direction="input" default="0.300000" minimum="0.000000" maximum="1.000000" content="other" name="Feedback" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Depth Mod" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.300000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Rate" />
+      <port direction="input" pp:default="0.430000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Depth" />
+      <port direction="input" pp:default="0.470000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mix" />
+      <port direction="input" pp:default="0.300000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Feedback" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Depth Mod" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Tracker" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Tracker" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mode" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Dynamics" />
-      <port direction="input" default="1.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mix" />
-      <port direction="input" default="0.970000" minimum="0.000000" maximum="1.000000" content="other" name="Glide" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Transpose" />
-      <port direction="input" default="0.800000" minimum="0.000000" maximum="1.000000" content="other" name="Maximum" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Trigger" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
+        <pp:enumeration label="Sine oscillator" value="0.0" />
+        <pp:enumeration label="Square oscillator" value="0.25" />
+        <pp:enumeration label="Sawtooth oscillator" value="0.5" />
+        <pp:enumeration label="Ring modulator" value="0.75" />
+        <pp:enumeration label="Peaking EQ" value="1.0" />
+      </port>
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dynamics" />
+      <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mix" />
+      <port direction="input" pp:default="0.970000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Glide" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Transpose" />
+      <port direction="input" pp:default="0.800000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Maximum" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Trigger" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Transient" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Transient" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Attack" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Release" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.490000" minimum="0.000000" maximum="1.000000" content="other" name="Filter" />
-      <port direction="input" default="0.350000" minimum="0.000000" maximum="1.000000" content="other" name="Att Hold" />
-      <port direction="input" default="0.350000" minimum="0.000000" maximum="1.000000" content="other" name="Rel Hold" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Attack" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Release" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.490000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Filter" />
+      <port direction="input" pp:default="0.350000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Att Hold" />
+      <port direction="input" pp:default="0.350000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Rel Hold" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA VocInput" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/VocInput" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Tracking" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Pitch" />
-      <port direction="input" default="0.200000" minimum="0.000000" maximum="1.000000" content="other" name="Breath" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="S Thresh" />
-      <port direction="input" default="0.350000" minimum="0.000000" maximum="1.000000" content="other" name="Max Freq" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Tracking">
+        <pp:enumeration label="Constant pitch" value="0.0" />
+        <pp:enumeration label="Track input pitch" value="0.5" />
+        <pp:enumeration label="Track quantized input pitch" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Pitch" />
+      <port direction="input" pp:default="0.200000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Breath" />
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="S Thresh" />
+      <port direction="input" pp:default="0.350000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Max Freq" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Vocoder" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Vocoder" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Mod In" />
-      <port direction="input" default="0.500000" minimum="0.000000" maximum="1.000000" content="other" name="Output" />
-      <port direction="input" default="0.400000" minimum="0.000000" maximum="1.000000" content="other" name="Hi Thru" />
-      <port direction="input" default="0.400000" minimum="0.000000" maximum="1.000000" content="other" name="Hi Band" />
-      <port direction="input" default="0.160000" minimum="0.000000" maximum="1.000000" content="other" name="Envelope" />
-      <port direction="input" default="0.550000" minimum="0.000000" maximum="1.000000" content="other" name="Filter Q" />
-      <port direction="input" default="0.666700" minimum="0.000000" maximum="1.000000" content="other" name="Mid Freq" />
-      <port direction="input" default="0.000000" minimum="0.000000" maximum="1.000000" content="other" name="Quality" />
-      <port direction="input"    content="audio" name="Left In" />
-      <port direction="input"    content="audio" name="Right In" />
-      <port direction="output"    content="audio" name="Left Out" />
-      <port direction="output"    content="audio" name="Right Out" />
+      <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mod In">
+        <pp:enumeration label="Left" value="0.0" />
+        <pp:enumeration label="Right" value="1.0" />
+      </port>
+      <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Output" />
+      <port direction="input" pp:default="0.400000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hi Thru" />
+      <port direction="input" pp:default="0.400000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Hi Band" />
+      <port direction="input" pp:default="0.160000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Envelope" />
+      <port direction="input" pp:default="0.550000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Filter Q" />
+      <port direction="input" pp:default="0.666700" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mid Freq" />
+      <port direction="input" pp:default="0"   pp:type="toggled" content="other" name="Quality" />
+      <port direction="input"     content="audio" name="Left In" />
+      <port direction="input"     content="audio" name="Right In" />
+      <port direction="output"     content="audio" name="Left Out" />
+      <port direction="output"     content="audio" name="Right Out" />
     </ports>
   </plugin>
 </plugins>
