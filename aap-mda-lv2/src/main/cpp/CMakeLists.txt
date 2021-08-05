@@ -4,6 +4,13 @@ project("aap-mda-lv2")
 
 set(MDA_LV2_DIR ../../../../external/mda-lv2)
 
+FILE(READ ${MDA_LV2_DIR}/mda.lv2/manifest.ttl.in MANIFEST_IN)
+string(REPLACE "@LIB_EXT@" ".so" MANIFEST_OUT "${MANIFEST_IN}")
+FILE(WRITE "../assets/lv2/mda.lv2/manifest.ttl" "${MANIFEST_OUT}")
+
+FILE(GLOB TTL_FILES ${MDA_LV2_DIR}/mda.lv2/*.ttl)
+FILE(COPY ${TTL_FILES} DESTINATION "${CMAKE_CURRENT_LIST_DIR}/../assets/lv2/mda.lv2")
+
 FILE(GLOB PLUGIN_CPP_FILES ${MDA_LV2_DIR}/src/*.cpp)
 list(FILTER PLUGIN_CPP_FILES EXCLUDE REGEX ".*mdaLooplex.cpp")
 FILE(GLOB LVZ_SOURCES ${MDA_LV2_DIR}/lvz/*.cpp)
