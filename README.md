@@ -12,6 +12,7 @@ We submodule mda-lv2, but we use our own CMakeLists.txt (instead of waf build sc
 
 It used to be difficult and complicated to step into LV2 toolkit sources (serd/sord/sratom/lilv), but now aap-lv2 builds those toolkits within its `androidaudioplugin-lv2` module (instead of prebuilt binaries), it is just a matter of adding `external/aap-lv2/androidaudioplugin-lv2` as a module.
 
+Here is an example patch: https://gist.github.com/atsushieno/799ea5129c09a616a0b6712fbb8ea5b1
 
 ## Licensing notice
 
