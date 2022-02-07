@@ -164,10 +164,10 @@
     <ports>
       <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Word Len" />
       <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dither">
+        <pp:enumeration label="Truncation" value="0.0" />
         <pp:enumeration label="Triangular PDF dither" value="0.33333333" />
         <pp:enumeration label="High-pass Triangular PDF dither" value="0.66666666" />
         <pp:enumeration label="Second-order noise-shaped dither" value="1.0" />
-        <pp:enumeration label="Truncation" value="0.0" />
       </port>
       <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Dith Amp" />
       <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="DC Trim" />
@@ -221,7 +221,7 @@
       <port direction="input" pp:default="0.650000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="LFO Rate" />
       <port direction="input" pp:default="0.250000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Velocity Sense" />
       <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Stereo Width" />
-      <port direction="input" pp:default="0"   pp:type="toggled" content="other" name="Polyphonic" />
+      <port direction="input" pp:default="1"   pp:type="toggled" content="other" name="Polyphonic" />
       <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Fine Tuning" />
       <port direction="input" pp:default="0.146000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Random Tuning" />
       <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Overdrive" />
@@ -459,10 +459,10 @@
   <plugin backend="LV2" name="MDA Splitter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Splitter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
     <ports>
       <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Mode">
-        <pp:enumeration label="Normal" value="0.0" />
         <pp:enumeration label="Inverse" value="0.33333333" />
         <pp:enumeration label="Normal Inverse" value="0.66666666" />
         <pp:enumeration label="Inverse Normal" value="1.0" />
+        <pp:enumeration label="Normal" value="0.0" />
       </port>
       <port direction="input" pp:default="0.500000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq" />
       <port direction="input" pp:default="0.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="Freq SW">
