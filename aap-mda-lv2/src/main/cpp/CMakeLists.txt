@@ -67,5 +67,24 @@ foreach(PLUGIN_CPP IN ITEMS ${PLUGIN_CPP_FILES})
 
     target_link_libraries( ${PLUGIN_NAME} android log)
 
+    # set non-zero this if you want to debug with AddressSanitizer
+    set(AAP_DEBUG_WITH_ASAN 0)
+
+    if (AAP_DEBUG_WITH_ASAN)
+        target_compile_options (${PLUGIN_NAME}
+                PUBLIC
+                -fsanitize=address -fno-omit-frame-pointer
+                )
+
+        target_link_options(${PLUGIN_NAME}
+                PUBLIC
+                -fsanitize=address
+                )
+
+        set_target_properties(${PLUGIN_NAME}
+                PROPERTIES LINK_FLAGS -fsanitize=address
+                )
+    endif()
+
 endforeach()
 
