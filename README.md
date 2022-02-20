@@ -8,6 +8,8 @@ This repository is for ports of [mda-lv2](https://gitlab.com/drobilla/mda-lv2) p
 
 We submodule mda-lv2, but we use our own CMakeLists.txt (instead of waf build script) so that we can easily debug into mda-lv2 sources using Android Studio.
 
+To avoid further dependencies like cairo, we skip some samples in mda-lv2 port (they are actually skipped at android-native-audio-builders repo).
+
 ## Debugging with mda-lv2 internals
 
 It used to be difficult and complicated to step into LV2 toolkit sources (serd/sord/sratom/lilv), but now aap-lv2 builds those toolkits within its `androidaudioplugin-lv2` module (instead of prebuilt binaries), it is just a matter of adding `external/aap-lv2/androidaudioplugin-lv2` as a module.
