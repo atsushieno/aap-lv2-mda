@@ -250,6 +250,10 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA JX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/JX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri="urn://androidaudioplugin.org/extensions/presets/v1" />
+      <extension uri="urn://androidaudioplugin.org/extensions/midi2/v1" />
+    </extensions>
     <ports>
       <port direction="input" pp:default="1.000000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="OSC Mix" />
       <port direction="input" pp:default="0.370000" pp:minimum="0.000000" pp:maximum="1.000000"  content="other" name="OSC Tune" />
