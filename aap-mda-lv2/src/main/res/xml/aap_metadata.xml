@@ -103,6 +103,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA DX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Attack" default="0.000000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Decay" default="0.650000" minimum="0.000000" maximum="1.000000"  />
@@ -181,6 +184,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Detune" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Detune" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Detune" default="0.200000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Mix" default="0.900000" minimum="0.000000" maximum="1.000000"  />
@@ -200,10 +206,10 @@
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Word Len" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Dither" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Truncation" value="0.0" />
         <enumeration label="Triangular PDF dither" value="0.33333333" />
         <enumeration label="High-pass Triangular PDF dither" value="0.66666666" />
         <enumeration label="Second-order noise-shaped dither" value="1.0" />
+        <enumeration label="Truncation" value="0.0" />
       </parameter>
       <parameter id="2" name="Dith Amp" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="3" name="DC Trim" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -260,6 +266,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA ePiano" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/EPiano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Envelope Decay" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Envelope Release" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -306,6 +315,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA JX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/JX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="OSC Mix" default="1.000000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="OSC Tune" default="0.370000" minimum="0.000000" maximum="1.000000"  />
@@ -341,6 +353,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Leslie" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Leslie" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.500000" minimum="0.000000" maximum="1.000000" >
         <enumeration label="Stop" value="0.0" />
@@ -446,6 +461,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Piano" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Piano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Envelope Decay" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Envelope Release" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -561,6 +579,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Splitter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Splitter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.000000" minimum="0.000000" maximum="1.000000" >
         <enumeration label="Normal" value="0.0" />
@@ -570,14 +591,14 @@
       </parameter>
       <parameter id="1" name="Freq" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Freq SW" default="0.000000" minimum="0.000000" maximum="1.000000" >
+        <enumeration label="Low" value="0.0" />
         <enumeration label="All" value="0.5" />
         <enumeration label="High" value="1.0" />
-        <enumeration label="Low" value="0.0" />
       </parameter>
       <parameter id="3" name="Level" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="4" name="Level SW" default="0.500000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Low" value="0.0" />
         <enumeration label="All" value="0.5" />
+        <enumeration label="Low" value="0.0" />
         <enumeration label="High" value="1.0" />
       </parameter>
       <parameter id="5" name="Envelope" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -678,6 +699,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA ThruZero" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/ThruZero" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Rate" default="0.300000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Depth" default="0.430000" minimum="0.000000" maximum="1.000000"  />
@@ -760,6 +784,9 @@
     </ports>
   </plugin>
   <plugin backend="LV2" name="MDA Vocoder" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Vocoder" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mod In" default="0.000000" minimum="0.000000" maximum="1.000000" >
         <enumeration label="Left" value="0.0" />
