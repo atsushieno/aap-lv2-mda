@@ -6,7 +6,7 @@ plugins {
 android {
     compileSdkVersion 33
     defaultConfig {
-        applicationId "org.androidaudioplugin.aap_mda_lv2"
+        applicationId "org.androidaudioplugin.ports.lv2.mda_lv2"
         minSdkVersion 29
         targetSdkVersion 33
         versionCode 1
