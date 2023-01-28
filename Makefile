@@ -20,5 +20,5 @@ build-java:
 
 update-metadata:
 	cd external/aap-lv2 && make build-lv2-importer
-	external/aap-lv2/tools/aap-import-lv2-metadata/build/aap-import-lv2-metadata aap-mda-lv2/src/main/assets/lv2 aap-mda-lv2/src/main/res/xml
+	external/aap-lv2/tools/aap-import-lv2-metadata/build/aap-import-lv2-metadata app/src/main/assets/lv2 app/src/main/res/xml
 
