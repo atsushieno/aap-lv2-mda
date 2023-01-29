@@ -7,4 +7,4 @@ on:
 jobs:
   build-dist:
     # note that you should usually specify versioned workflow file.
-    uses: atsushieno/aap-lv2/.github/workflows/build-dist-app.yml@main
+    uses: atsushieno/aap-lv2/.github/workflows/build-dist-app.yml@75f7907
