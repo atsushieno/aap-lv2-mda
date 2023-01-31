@@ -14,7 +14,7 @@ build-aap-lv2:
 ## Build utility
 
 build-java:
-	ANDROID_SDK_ROOT=$(ANDROID_SDK_ROOT) ./gradlew build
+	ANDROID_SDK_ROOT=$(ANDROID_SDK_ROOT) ./gradlew build bundle
  
 ## update metadata
 
