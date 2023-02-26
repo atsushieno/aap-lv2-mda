@@ -1,8 +1,8 @@
 <devices>
     <device name="MDA" manufacturer="androidaudioplugin.org" product="aap-mda-lv2">
-        <input-port name="DX10" />
-        <input-port name="ePiano" />
-        <input-port name="JX10" />
-        <input-port name="Piano" />
+        <input-port name="MDA DX10" />
+        <input-port name="MDA ePiano" />
+        <input-port name="MDA JX10" />
+        <input-port name="MDA Piano" />
     </device>
 </devices>
