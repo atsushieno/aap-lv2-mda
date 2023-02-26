@@ -1,2 +1,2 @@
-rootProject.name = 'aap-lv2-mda'
-include ':app'
+rootProject.name = "aap-lv2-mda"
+include ":app"
