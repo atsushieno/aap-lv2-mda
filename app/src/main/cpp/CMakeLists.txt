@@ -15,6 +15,9 @@ FILE(GLOB PLUGIN_CPP_FILES ${MDA_LV2_DIR}/src/*.cpp)
 list(FILTER PLUGIN_CPP_FILES EXCLUDE REGEX ".*mdaLooplex.cpp")
 FILE(GLOB LVZ_SOURCES ${MDA_LV2_DIR}/lvz/*.cpp)
 
+find_package (androidaudioplugin REQUIRED CONFIG)
+find_package (androidaudioplugin-lv2 REQUIRED CONFIG)
+
 foreach(PLUGIN_CPP IN ITEMS ${PLUGIN_CPP_FILES})
 
     message(${PLUGIN_CPP})
@@ -51,9 +54,6 @@ foreach(PLUGIN_CPP IN ITEMS ${PLUGIN_CPP_FILES})
         PRIVATE
         ../../../../external/lv2/
         ${MDA_LV2_DIR}/lvz/
-        "${Project_SOURCE_DIR}/../../../../../../native/plugin-api/include"
-        "${Project_SOURCE_DIR}/../../../../../../native/androidaudioplugin/core/include"
-        "${Project_SOURCE_DIR}/../../../../../../native/androidaudioplugin/android/src/gen/include"
     )
 
     target_compile_options( ${PLUGIN_NAME}
@@ -65,7 +65,12 @@ foreach(PLUGIN_CPP IN ITEMS ${PLUGIN_CPP_FILES})
         -Wshadow-field
         )
 
-    target_link_libraries( ${PLUGIN_NAME} android log)
+    target_link_libraries( ${PLUGIN_NAME}
+            android
+            log
+            androidaudioplugin::androidaudioplugin
+            androidaudioplugin-lv2::androidaudioplugin-lv2
+            )
 
     # set non-zero this if you want to debug with AddressSanitizer
     set(AAP_DEBUG_WITH_ASAN 0)
