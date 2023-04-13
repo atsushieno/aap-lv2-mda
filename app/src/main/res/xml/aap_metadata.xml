@@ -1,5 +1,12 @@
 <plugins xmlns="urn:org.androidaudioplugin.core" xmlns:pp="urn:org.androidaudioplugin.port">
-  <plugin backend="LV2" name="MDA Ambience" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Ambience" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Ambience" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Ambience" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Size" default="0.700000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="HF Damp" default="0.700000" minimum="0.000000" maximum="1.000000"  />
@@ -15,11 +22,18 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Bandisto" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Bandisto" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Bandisto" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Bandisto" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Listen" default="1.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Low" value="0.0" />
         <enumeration label="Mid" value="0.33333333" />
+        <enumeration label="Low" value="0.0" />
         <enumeration label="High" value="0.66666666" />
         <enumeration label="Out" value="1.0" />
       </parameter>
@@ -45,7 +59,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA BeatBox" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/BeatBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA BeatBox" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/BeatBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Hat Thr" default="0.300000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Hat Rate" default="0.450000" minimum="0.000000" maximum="1.000000"  />
@@ -75,7 +96,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Combo" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Combo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Combo" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Combo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Model" default="1.000000" minimum="0.000000" maximum="1.000000" >
         <enumeration label="D.I. (flat frequency response)" value="0.0" />
@@ -89,7 +117,10 @@
       <parameter id="1" name="Drive" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Bias" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="3" name="Output" default="0.500000" minimum="0.000000" maximum="1.000000"  />
-      <parameter id="4" name="Stereo" default="0"   type="toggled" />
+      <parameter id="4" name="Stereo" default="0"   type="boolean">
+        <enumeration label="true" value="1" />
+        <enumeration label="false" value="0" />
+      </parameter>
       <parameter id="5" name="HPF Freq" default="0.000000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="6" name="HPF Reso" default="0.500000" minimum="0.000000" maximum="1.000000"  />
     </parameters>
@@ -102,9 +133,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA DX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA DX10" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/DX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Attack" default="0.000000" minimum="0.000000" maximum="1.000000"  />
@@ -132,7 +168,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA De-ess" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DeEss" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA De-ess" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/DeEss" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Thresh" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Freq" default="0.600000" minimum="0.000000" maximum="1.000000"  />
@@ -147,7 +190,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Degrade" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Degrade" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Degrade" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Degrade" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Headroom" default="0.800000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Quant" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -165,7 +215,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Delay" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Delay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Delay" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Delay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="L Delay" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="R Delay" default="0.270000" minimum="0.000000" maximum="1.000000"  />
@@ -183,9 +240,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Detune" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Detune" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Detune" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Detune" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Detune" default="0.200000" minimum="0.000000" maximum="1.000000"  />
@@ -202,14 +264,21 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Dither" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Dither" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Dither" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Dither" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Word Len" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Dither" default="0.000000" minimum="0.000000" maximum="1.000000" >
         <enumeration label="Triangular PDF dither" value="0.33333333" />
         <enumeration label="High-pass Triangular PDF dither" value="0.66666666" />
-        <enumeration label="Second-order noise-shaped dither" value="1.0" />
         <enumeration label="Truncation" value="0.0" />
+        <enumeration label="Second-order noise-shaped dither" value="1.0" />
       </parameter>
       <parameter id="2" name="Dith Amp" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="3" name="DC Trim" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -224,7 +293,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA DubDelay" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/DubDelay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA DubDelay" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/DubDelay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Delay" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Feedback" default="0.700000" minimum="0.000000" maximum="1.000000"  />
@@ -243,7 +319,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Dynamics" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Dynamics" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Dynamics" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Dynamics" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Thresh" default="0.600000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Ratio" default="0.400000" minimum="0.000000" maximum="1.000000"  />
@@ -265,9 +348,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA ePiano" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/EPiano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA ePiano" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/EPiano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Envelope Decay" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -278,7 +366,10 @@
       <parameter id="5" name="LFO Rate" default="0.650000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="6" name="Velocity Sense" default="0.250000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="7" name="Stereo Width" default="0.500000" minimum="0.000000" maximum="1.000000"  />
-      <parameter id="8" name="Polyphonic" default="1"   type="toggled" />
+      <parameter id="8" name="Polyphonic" default="1"   type="boolean">
+        <enumeration label="true" value="1" />
+        <enumeration label="false" value="0" />
+      </parameter>
       <parameter id="9" name="Fine Tuning" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="10" name="Random Tuning" default="0.146000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="11" name="Overdrive" default="0.000000" minimum="0.000000" maximum="1.000000"  />
@@ -291,13 +382,20 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Image" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Image" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Image" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Image" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Stereo image adjustment" value="0.0" />
-        <enumeration label="Encode to MS" value="0.25" />
         <enumeration label="Decode from MS" value="0.5" />
         <enumeration label="Decode from MS (input channels reversed)" value="0.75" />
+        <enumeration label="Encode to MS" value="0.25" />
+        <enumeration label="Stereo image adjustment" value="0.0" />
       </parameter>
       <parameter id="1" name="S Width" default="0.750000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="S Pan" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -314,9 +412,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA JX10" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/JX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA JX10" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/JX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="OSC Mix" default="1.000000" minimum="0.000000" maximum="1.000000"  />
@@ -352,15 +455,20 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Leslie" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Leslie" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Leslie" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Leslie" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.500000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Stop" value="0.0" />
-        <enumeration label="Slow" value="0.5" />
         <enumeration label="Fast" value="1.0" />
+        <enumeration label="Slow" value="0.5" />
+        <enumeration label="Stop" value="0.0" />
       </parameter>
       <parameter id="1" name="Lo Width" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Lo Throb" default="0.600000" minimum="0.000000" maximum="1.000000"  />
@@ -380,7 +488,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Limiter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Limiter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Limiter" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Limiter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Thresh" default="0.600000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Output" default="0.600000" minimum="0.000000" maximum="1.000000"  />
@@ -400,7 +515,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Loudness" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Loudness" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Loudness" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Loudness" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Loudness" default="0.700000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Output" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -415,13 +537,20 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA MultiBand" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/MultiBand" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA MultiBand" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/MultiBand" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Listen" default="1.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Low" value="0.0" />
-        <enumeration label="Mid" value="0.33333333" />
-        <enumeration label="High" value="0.66666666" />
         <enumeration label="Output" value="1.0" />
+        <enumeration label="High" value="0.66666666" />
+        <enumeration label="Mid" value="0.33333333" />
+        <enumeration label="Low" value="0.0" />
       </parameter>
       <parameter id="1" name="L __ M" default="0.103000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="M __ H" default="0.878000" minimum="0.000000" maximum="1.000000"  />
@@ -434,7 +563,10 @@
       <parameter id="9" name="Attack" default="0.220000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="10" name="Release" default="0.602000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="11" name="Stereo" default="0.550000" minimum="0.000000" maximum="1.000000"  />
-      <parameter id="12" name="Process" default="0"   type="toggled" />
+      <parameter id="12" name="Process" default="0"   type="boolean">
+        <enumeration label="true" value="1" />
+        <enumeration label="false" value="0" />
+      </parameter>
     </parameters>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -445,7 +577,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Overdrive" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Overdrive" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Overdrive" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Overdrive" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Drive" default="0.000000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Muffle" default="0.000000" minimum="0.000000" maximum="1.000000"  />
@@ -460,9 +599,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Piano" category="Instrument" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Piano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Piano" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Piano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Envelope Decay" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -486,7 +630,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA RePsycho!" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RePsycho" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA RePsycho!" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RePsycho" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Tune" default="1.000000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Fine" default="1.000000" minimum="0.000000" maximum="1.000000"  />
@@ -508,7 +659,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA RezFilter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RezFilter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA RezFilter" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RezFilter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Freq" default="0.330000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Res" default="0.700000" minimum="0.000000" maximum="1.000000"  />
@@ -530,7 +688,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA RingMod" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RingMod" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA RingMod" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RingMod" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Freq" default="0.062500" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Fine" default="0.000000" minimum="0.000000" maximum="1.000000"  />
@@ -545,7 +710,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA RoundPan" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/RoundPan" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA RoundPan" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RoundPan" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Pan" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Auto" default="0.800000" minimum="0.000000" maximum="1.000000"  />
@@ -559,12 +731,19 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Shepard" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Shepard" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Shepard" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Shepard" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Tones only" value="0.0" />
-        <enumeration label="Input ring modulated by tones" value="0.5" />
         <enumeration label="Tones mixed with input" value="1.0" />
+        <enumeration label="Input ring modulated by tones" value="0.5" />
+        <enumeration label="Tones only" value="0.0" />
       </parameter>
       <parameter id="1" name="Rate" default="0.700000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Output" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -578,27 +757,32 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Splitter" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Splitter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Splitter" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Splitter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Normal" value="0.0" />
-        <enumeration label="Inverse" value="0.33333333" />
         <enumeration label="Normal Inverse" value="0.66666666" />
         <enumeration label="Inverse Normal" value="1.0" />
+        <enumeration label="Inverse" value="0.33333333" />
+        <enumeration label="Normal" value="0.0" />
       </parameter>
       <parameter id="1" name="Freq" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Freq SW" default="0.000000" minimum="0.000000" maximum="1.000000" >
+        <enumeration label="High" value="1.0" />
         <enumeration label="Low" value="0.0" />
         <enumeration label="All" value="0.5" />
-        <enumeration label="High" value="1.0" />
       </parameter>
       <parameter id="3" name="Level" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="4" name="Level SW" default="0.500000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="All" value="0.5" />
         <enumeration label="Low" value="0.0" />
+        <enumeration label="All" value="0.5" />
         <enumeration label="High" value="1.0" />
       </parameter>
       <parameter id="5" name="Envelope" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -613,7 +797,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Stereo" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Stereo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Stereo" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Stereo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Width" default="0.780000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Delay" default="0.430000" minimum="0.000000" maximum="1.000000"  />
@@ -630,13 +821,20 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA SubSynth" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/SubSynth" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA SubSynth" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/SubSynth" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Type" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Distort" value="0.0" />
-        <enumeration label="Divide" value="0.25" />
-        <enumeration label="Invert" value="0.5" />
         <enumeration label="Key Osc." value="0.75" />
+        <enumeration label="Invert" value="0.5" />
+        <enumeration label="Divide" value="0.25" />
+        <enumeration label="Distort" value="0.0" />
       </parameter>
       <parameter id="1" name="Level" default="0.300000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Tune" default="0.600000" minimum="0.000000" maximum="1.000000"  />
@@ -653,7 +851,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA TalkBox" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/TalkBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA TalkBox" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/TalkBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Wet" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Dry" default="0.000000" minimum="0.000000" maximum="1.000000"  />
@@ -669,11 +874,18 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA TestTone" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/TestTone" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA TestTone" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/TestTone" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="MIDI #" value="0.0" />
         <enumeration label="Impulse" value="0.14" />
+        <enumeration label="MIDI #" value="0.0" />
         <enumeration label="White" value="0.28" />
         <enumeration label="Pink" value="0.42" />
         <enumeration label="Sine" value="0.57" />
@@ -698,9 +910,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA ThruZero" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/ThruZero" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA ThruZero" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/ThruZero" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Rate" default="0.300000" minimum="0.000000" maximum="1.000000"  />
@@ -718,13 +935,20 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Tracker" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Tracker" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Tracker" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Tracker" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mode" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Sine oscillator" value="0.0" />
-        <enumeration label="Square oscillator" value="0.25" />
         <enumeration label="Sawtooth oscillator" value="0.5" />
         <enumeration label="Ring modulator" value="0.75" />
+        <enumeration label="Square oscillator" value="0.25" />
+        <enumeration label="Sine oscillator" value="0.0" />
         <enumeration label="Peaking EQ" value="1.0" />
       </parameter>
       <parameter id="1" name="Dynamics" default="1.000000" minimum="0.000000" maximum="1.000000"  />
@@ -744,7 +968,14 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Transient" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Transient" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Transient" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Transient" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Attack" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="1" name="Release" default="0.500000" minimum="0.000000" maximum="1.000000"  />
@@ -762,12 +993,19 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA VocInput" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/VocInput" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA VocInput" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/VocInput" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
+    <extensions>
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+    </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Tracking" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Constant pitch" value="0.0" />
-        <enumeration label="Track input pitch" value="0.5" />
         <enumeration label="Track quantized input pitch" value="1.0" />
+        <enumeration label="Track input pitch" value="0.5" />
+        <enumeration label="Constant pitch" value="0.0" />
       </parameter>
       <parameter id="1" name="Pitch" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Breath" default="0.200000" minimum="0.000000" maximum="1.000000"  />
@@ -783,14 +1021,19 @@
       <port direction='output' content='midi2' name='MIDI Out' />
     </ports>
   </plugin>
-  <plugin backend="LV2" name="MDA Vocoder" category="Effect" author="David Robillard" manufacturer="http://drobilla.net/plugins/mda/" unique-id="lv2:http://drobilla.net/plugins/mda/Vocoder" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" assets="/lv2/mda.lv2/">
+  <plugin backend="LV2" name="MDA Vocoder" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Vocoder" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.web.AudioPluginWebViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/presets/v1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/presets/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/midi/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
     </extensions>
     <parameters xmlns='urn://androidaudioplugin.org/extensions/parameters'>
       <parameter id="0" name="Mod In" default="0.000000" minimum="0.000000" maximum="1.000000" >
-        <enumeration label="Left" value="0.0" />
         <enumeration label="Right" value="1.0" />
+        <enumeration label="Left" value="0.0" />
       </parameter>
       <parameter id="1" name="Output" default="0.500000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="2" name="Hi Thru" default="0.400000" minimum="0.000000" maximum="1.000000"  />
@@ -798,7 +1041,10 @@
       <parameter id="4" name="Envelope" default="0.160000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="5" name="Filter Q" default="0.550000" minimum="0.000000" maximum="1.000000"  />
       <parameter id="6" name="Mid Freq" default="0.666700" minimum="0.000000" maximum="1.000000"  />
-      <parameter id="7" name="Quality" default="0"   type="toggled" />
+      <parameter id="7" name="Quality" default="0"   type="boolean">
+        <enumeration label="true" value="1" />
+        <enumeration label="false" value="0" />
+      </parameter>
     </parameters>
     <ports>
       <port direction='input' content='audio' name='Left In' />
