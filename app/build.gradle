@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    compileSdkVersion 33
+    namespace 'org.androidaudioplugin.ports.lv2.mda_lv2'
+    compileSdk = 33
     defaultConfig {
         applicationId "org.androidaudioplugin.ports.lv2.mda_lv2"
-        minSdkVersion 29
-        targetSdkVersion 33
+        minSdk = 29
         versionCode 1
         versionName libs.versions.aap.lv2.get()
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -45,6 +45,9 @@ android {
         //doNotStrip "*/*/*.so"
         if (enable_asan)
             jniLibs.useLegacyPackaging = true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
 }
 
