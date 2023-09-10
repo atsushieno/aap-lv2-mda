@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'org.androidaudioplugin.ports.lv2.mda_lv2'
-    compileSdk = 33
+    compileSdk = 34
     defaultConfig {
         applicationId "org.androidaudioplugin.ports.lv2.mda_lv2"
         minSdk = 29
