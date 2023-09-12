@@ -1,5 +1,24 @@
 rootProject.name = "aap-lv2-mda"
 include ":app"
-// Enable these lines if you want to debug androidaudioplugin-lv2
-//include ":androidaudioplugin-lv2"
-//project(":androidaudioplugin-lv2").projectDir = new File("external/aap-lv2/androidaudioplugin-lv2")
+
+include ":androidaudioplugin-lv2"
+project(":androidaudioplugin-lv2").projectDir = new File("external/aap-lv2/androidaudioplugin-lv2")
+
+include ':androidaudioplugin'
+include ':androidaudioplugin-testing'
+include ':androidaudioplugin-manager'
+include ':androidaudioplugin-samples-host-engine'
+include ':androidaudioplugin-ui-web'
+include ':androidaudioplugin-ui-compose'
+include ':androidaudioplugin-ui-compose-app'
+include ':androidaudioplugin-midi-device-service'
+include ':androidaudioplugin-lv2'
+project(':androidaudioplugin').projectDir = new File('../aap-core/androidaudioplugin')
+project(':androidaudioplugin-testing').projectDir = new File('../aap-core/androidaudioplugin-testing')
+project(':androidaudioplugin-manager').projectDir = new File('../aap-core/androidaudioplugin-manager')
+project(':androidaudioplugin-samples-host-engine').projectDir = new File('../aap-core/androidaudioplugin-samples-host-engine')
+project(':androidaudioplugin-ui-web').projectDir = new File('../aap-core/androidaudioplugin-ui-web')
+project(':androidaudioplugin-ui-compose').projectDir = new File('../aap-core/androidaudioplugin-ui-compose')
+project(':androidaudioplugin-ui-compose-app').projectDir = new File('../aap-core/androidaudioplugin-ui-compose-app')
+project(':androidaudioplugin-midi-device-service').projectDir = new File('../aap-core/androidaudioplugin-midi-device-service')
+project(':androidaudioplugin-lv2').projectDir = new File('../aap-lv2/androidaudioplugin-lv2')
