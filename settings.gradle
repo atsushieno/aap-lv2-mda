@@ -13,12 +13,11 @@ include ':androidaudioplugin-ui-compose'
 include ':androidaudioplugin-ui-compose-app'
 include ':androidaudioplugin-midi-device-service'
 include ':androidaudioplugin-lv2'
-project(':androidaudioplugin').projectDir = new File('../aap-core/androidaudioplugin')
-project(':androidaudioplugin-testing').projectDir = new File('../aap-core/androidaudioplugin-testing')
-project(':androidaudioplugin-manager').projectDir = new File('../aap-core/androidaudioplugin-manager')
-project(':androidaudioplugin-samples-host-engine').projectDir = new File('../aap-core/androidaudioplugin-samples-host-engine')
-project(':androidaudioplugin-ui-web').projectDir = new File('../aap-core/androidaudioplugin-ui-web')
-project(':androidaudioplugin-ui-compose').projectDir = new File('../aap-core/androidaudioplugin-ui-compose')
-project(':androidaudioplugin-ui-compose-app').projectDir = new File('../aap-core/androidaudioplugin-ui-compose-app')
-project(':androidaudioplugin-midi-device-service').projectDir = new File('../aap-core/androidaudioplugin-midi-device-service')
-project(':androidaudioplugin-lv2').projectDir = new File('../aap-lv2/androidaudioplugin-lv2')
+project(':androidaudioplugin').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin')
+project(':androidaudioplugin-testing').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-testing')
+project(':androidaudioplugin-manager').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-manager')
+project(':androidaudioplugin-samples-host-engine').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-samples-host-engine')
+project(':androidaudioplugin-ui-web').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-ui-web')
+project(':androidaudioplugin-ui-compose').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-ui-compose')
+project(':androidaudioplugin-ui-compose-app').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-ui-compose-app')
+project(':androidaudioplugin-midi-device-service').projectDir = new File('external/aap-lv2/external/aap-core/androidaudioplugin-midi-device-service')
