@@ -13,7 +13,16 @@ build-aap-lv2:
 
 ## Build utility
 
-build-java:
+create-local-prop:
+	if [ ! -f local.properties ] ; then \
+		if [ `uname` == "Darwin" ] ; then \
+			echo "sdk.dir=$(HOME)/Library/Android/sdk" > local.properties ; \
+		else \
+			echo "sdk.dir=$(HOME)/Android/Sdk" > local.properties ; \
+		fi ; \
+	fi
+
+build-java: create-local-prop
 	ANDROID_SDK_ROOT=$(ANDROID_SDK_ROOT) ./gradlew build bundle
  
 ## update metadata
