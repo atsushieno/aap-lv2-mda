@@ -1,11 +1,11 @@
 <plugins xmlns="urn:org.androidaudioplugin.core" xmlns:pp="urn:org.androidaudioplugin.port">
   <plugin backend="LV2" name="MDA Ambience" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Ambience" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -18,11 +18,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Bandisto" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Bandisto" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -35,11 +35,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA BeatBox" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/BeatBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -52,11 +52,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Combo" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Combo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -69,12 +69,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA DX10" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/DX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='output' content='audio' name='Left Out' />
@@ -85,11 +85,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA De-ess" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/DeEss" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -102,11 +102,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Degrade" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Degrade" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -119,11 +119,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Delay" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Delay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -136,12 +136,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA Detune" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Detune" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -154,11 +154,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Dither" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Dither" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -171,11 +171,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA DubDelay" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/DubDelay" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -188,11 +188,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Dynamics" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Dynamics" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -205,12 +205,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA ePiano" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/EPiano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='output' content='audio' name='Left Out' />
@@ -221,11 +221,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Image" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Image" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -238,12 +238,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA JX10" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/JX10" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='output' content='audio' name='Left Out' />
@@ -254,12 +254,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA Leslie" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Leslie" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -272,11 +272,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Limiter" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Limiter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -289,11 +289,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Loudness" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Loudness" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -306,11 +306,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA MultiBand" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/MultiBand" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -323,11 +323,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Overdrive" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Overdrive" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -340,12 +340,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA Piano" category="Instrument" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Piano" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='output' content='audio' name='Left Out' />
@@ -356,11 +356,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA RePsycho!" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RePsycho" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -373,11 +373,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA RezFilter" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RezFilter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -390,11 +390,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA RingMod" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RingMod" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -407,11 +407,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA RoundPan" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/RoundPan" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -424,11 +424,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Shepard" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Shepard" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -441,12 +441,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA Splitter" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Splitter" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -459,11 +459,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Stereo" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Stereo" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -476,11 +476,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA SubSynth" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/SubSynth" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -493,11 +493,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA TalkBox" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/TalkBox" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -510,11 +510,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA TestTone" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/TestTone" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -527,12 +527,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA ThruZero" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/ThruZero" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -545,11 +545,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Tracker" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Tracker" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -562,11 +562,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA Transient" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Transient" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -579,11 +579,11 @@
   </plugin>
   <plugin backend="LV2" name="MDA VocInput" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/VocInput" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
@@ -596,12 +596,12 @@
   </plugin>
   <plugin backend="LV2" name="MDA Vocoder" category="Effect" developer="David Robillard" unique-id="lv2:http://drobilla.net/plugins/mda/Vocoder" library="libandroidaudioplugin-lv2.so" entrypoint="GetAndroidAudioPluginFactoryLV2Bridge" gui:ui-view-factory="org.androidaudioplugin.ui.compose.ComposeAudioPluginViewFactory" xmlns:gui="urn://androidaudioplugin.org/extensions/gui" >
     <extensions>
-      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v2' />
-      <extension uri='urn://androidaudioplugin.org/extensions/state/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/state/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v2.1' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/gui/v2' />
+      <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
     <ports>
       <port direction='input' content='audio' name='Left In' />
