@@ -5,7 +5,6 @@ AAP_LV2_DIR=$(PWD)/external/aap-lv2
 all: build-all
 
 build-all: \
-	build-aap-lv2 \
 	build-java
 
 build-aap-lv2:
