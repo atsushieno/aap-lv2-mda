@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace 'org.androidaudioplugin.ports.lv2.mda_lv2'
-    compileSdkPreview = "VanillaIceCream"
+    compileSdk = libs.versions.android.compileSdk.get().toInteger()
     defaultConfig {
         applicationId "org.androidaudioplugin.ports.lv2.mda_lv2"
-        minSdk = 29
+        minSdk = libs.versions.android.minSdk.get().toInteger()
         versionCode 1
         versionName libs.versions.aap.lv2.get()
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -34,7 +34,7 @@ android {
     externalNativeBuild {
         cmake {
             path "src/main/cpp/CMakeLists.txt"
-            version "3.22.1"
+            version libs.versions.cmake.get()
         }
     }
     buildFeatures {
