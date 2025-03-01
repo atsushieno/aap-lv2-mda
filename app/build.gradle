@@ -71,8 +71,5 @@ dependencies {
      */
 
     testImplementation libs.junit
-    androidTestImplementation libs.test.core
-    androidTestImplementation libs.test.rules
-    androidTestImplementation libs.test.runner
     androidTestImplementation libs.test.ext.junit
 }
