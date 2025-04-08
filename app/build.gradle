@@ -77,3 +77,12 @@ dependencies {
     testImplementation libs.junit
     androidTestImplementation libs.test.ext.junit
 }
+
+afterEvaluate {
+    // LV2 ttl resources are copied at CMake build.
+    // Thus collecting assets must wait for the native build.
+    // But Gradle does not know that it has to wait,
+    // so declare task dependency here.
+    tasks.named("mergeDebugAssets").configure {it.mustRunAfter("mergeDebugNativeLibs") }
+    tasks.named("mergeReleaseAssets").configure {it.mustRunAfter("mergeReleaseNativeLibs") }
+}
