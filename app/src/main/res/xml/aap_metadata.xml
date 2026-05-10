@@ -3,7 +3,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -20,7 +20,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -37,7 +37,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -54,7 +54,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -72,7 +72,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -87,7 +87,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -104,7 +104,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -121,7 +121,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -139,7 +139,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -156,7 +156,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -173,7 +173,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -190,7 +190,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -208,7 +208,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -223,7 +223,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -241,7 +241,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -257,7 +257,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -274,7 +274,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -291,7 +291,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -308,7 +308,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -325,7 +325,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -343,7 +343,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -358,7 +358,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -375,7 +375,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -392,7 +392,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -409,7 +409,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -426,7 +426,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -444,7 +444,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -461,7 +461,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -478,7 +478,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -495,7 +495,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -512,7 +512,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -530,7 +530,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -547,7 +547,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -564,7 +564,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -581,7 +581,7 @@
     <extensions>
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
@@ -599,7 +599,7 @@
       <extension uri='urn://androidaudioplugin.org/extensions/plugin-info/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/state/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/presets/v3' />
-      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v3' />
+      <extension uri='urn://androidaudioplugin.org/extensions/parameters/v4' />
       <extension uri='urn://androidaudioplugin.org/extensions/midi/v3' />
       <extension uri='urn://androidaudioplugin.org/extensions/gui/v3' />
     </extensions>
